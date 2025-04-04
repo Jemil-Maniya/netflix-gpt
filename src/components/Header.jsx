@@ -35,29 +35,31 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         dispatch(removeUser());
-        navigate("/"); 
+        navigate("/");
       })
-      .catch((error) => {
-      });
+      .catch((error) => {});
   };
 
-  const handleGptSearch = ()=> {
-    
+  const handleGptSearch = () => {
     dispatch(toggleGptSearchView());
-    
-    
-  }
+  };
 
   return (
-    <div className=" z-20 flex justify-between w-full absolute px-8 py-2 bg-gradient-to-b from-black">
-      <img className="w-44" src={LOGO} alt="logo" />
+    <div className=" z-20 flex flex-col md:flex-row justify-between w-full absolute px-8 py-2 bg-gradient-to-b from-black">
+      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
       {user && (
-        <div className="flex">
-          <button className="my-4 px-4  bg-red-700 text-white rounded-lg cursor-pointer" onClick={handleGptSearch}>GPT Search</button>
-          <h1 className="p-6 text-white font-bold">
+        <div className="flex justify-between">
+          <button
+            className="p-1  my-4 px-4  bg-red-700 text-white rounded-lg cursor-pointer"
+            onClick={handleGptSearch}>
+            GPT Search
+          </button>
+          <h1 className="p-6 text-white  font-bold hidden md:block">
             Welcome, {user?.displayName || "Guest"}
           </h1>
-          <button onClick={handleSignOut} className="font-bold cursor-pointer text-white">
+          <button
+            onClick={handleSignOut}
+            className="font-bold cursor-pointer text-white">
             Sign Out
           </button>
         </div>

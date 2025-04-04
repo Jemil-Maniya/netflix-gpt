@@ -100,14 +100,14 @@ const Login = () => {
     <div>
       <Header />
       <div>
-        <img 
+        <img className="h-screen object-cover md:h-[100%]"
           src={BACKGROUND}
           alt="loginPage-img"
         />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="  w-85 pb-20 pr-8 pl-8 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black p-6 rounded-lg shadow-lg opacity-85 ">
+        className=" w-full  md:w-85 pb-20 pr-8 pl-8 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black p-6 rounded-lg shadow-lg opacity-85 ">
         <h1 className="mt-5 mb-4 text-2xl font-bold  text-white">
           {" "}
           {isSignin ? "Login" : "Sign Up"}

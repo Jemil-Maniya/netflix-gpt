@@ -5,7 +5,7 @@ const MovieList = ({title, movie}) => {
     // console.log(movie.poster_path)
   return (
     <div className="movieList p-2 ">
-      <h1 className="text-3xl text-white pl-3 py-4">{title} </h1>
+      <h1 className="text-lg md:text-3xl text-white pl-3 py-4">{title} </h1>
       <div className="flex overflow-x-scroll scroll-smooth  no-scrollbar">
         <div className="flex">
           {movie && movie.length > 0 ? ( movie.map((movie) => (

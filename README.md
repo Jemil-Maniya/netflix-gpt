@@ -32,8 +32,17 @@
 - usePopularmovies custom hook
 - useTopratedmovies custom hook 
 - GPT search page
-- GPt search bar
-
+- GPT search bar
+- Get GPT search OPEN AI API KEy
+- GPT search API call
+- Fetched GPT movies suggetsions from TMDB
+- created gptslice and added data there
+- Re-used movies list component to make movie suggestion container
+- Memoization
+- Addinf .env file
+- Adding .env file to gitignore
+- we made site responsive
+- 
 ...
 
 # features
