@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth/cordova";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBPTklbK3V8mQ_kwP2T2f6V0d6AJ7GFqys",
+  
   authDomain: "netflixgpt-e123e.firebaseapp.com",
   projectId: "netflixgpt-e123e",
   storageBucket: "netflixgpt-e123e.firebasestorage.app",
