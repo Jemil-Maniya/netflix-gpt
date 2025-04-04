@@ -8,9 +8,10 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZDk5ZjMyYjhkMDBkMzYxODgwZTQ1ZGFmMGUzN2EwOSIsIm5iZiI6MTc0MzA2OTk3MS40MTUsInN1YiI6IjY3ZTUyMzEzZjg0Njc5NGU5OTEwYTkwOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ougIi2aeZFmacC4C7dlw02d0Jccrg0p_TevmuxnwP_M",
+    Authorization: "Bearer " + import.meta.env.VITE_TMDB_KEY,
   },
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+export const OPENAI_API_KEY = import.meta .env.VITE_OPENAI_API_KEY;

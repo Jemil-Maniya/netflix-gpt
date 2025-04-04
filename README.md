@@ -31,6 +31,8 @@
 - Made the browse page better with Tailwind 
 - usePopularmovies custom hook
 - useTopratedmovies custom hook 
+- GPT search page
+- GPt search bar
 
 ...
 

@@ -3,6 +3,7 @@ import { IMG_CDN_URL } from '../utils/constants'
 
 const MovieCard = ({posterPath}) => {
     // console.log(posterPath)
+    if(!posterPath) return null
   return (
     <div className='w-47.5 p-2'>
         <img className='w-40' alt='cardIMG' src={IMG_CDN_URL + posterPath} />

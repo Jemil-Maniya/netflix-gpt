@@ -8,9 +8,9 @@ const MovieList = ({title, movie}) => {
       <h1 className="text-3xl text-white pl-3 py-4">{title} </h1>
       <div className="flex overflow-x-scroll scroll-smooth  no-scrollbar">
         <div className="flex">
-          {movie.map((movie) => (
+          {movie && movie.length > 0 ? ( movie.map((movie) => (
             <MovieCard key={movie.id} posterPath={movie.poster_path} />
-          ))}
+          )) ) : ("errror")}
         </div>
       </div>
 
