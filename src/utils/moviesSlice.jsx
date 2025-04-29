@@ -23,6 +23,7 @@ const moviesSlice = createSlice({
     },
     addTrailerVideos: (state, action) => {
       state.trailerVideo = action.payload;
+      // console.log("reducer payload", action.type)
     },
   },
 });

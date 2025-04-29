@@ -59,7 +59,7 @@ const GptSearchBar = () => {
           placeholder="what would you like today?"
         />
         <button
-          className="col-span-3 m-4 py-2 px-4 bg-red-700 text-white rounded-lg"
+          className="col-span-3 m-4 py-2 px-4 bg-red-700 text-white rounded-lg cursor-pointer"
           onClick={handleGptSearchClick}>
           Search
         </button>

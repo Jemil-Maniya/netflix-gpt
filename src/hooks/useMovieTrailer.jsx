@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
 
 const useMovieTrailer = (movieId) => {
+   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
   const dispatch = useDispatch();
-  const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
+ 
 
   // fetch trailer video && updating the store with trailer video data
   const getMovieVideo = async () => {
@@ -25,10 +26,12 @@ const useMovieTrailer = (movieId) => {
     const trailer = filterData.length ? filterData[2] : json.results[0];
     dispatch(addTrailerVideos(trailer));
     // console.log(trailer);
+    
   };
 
   useEffect(() => {
     !trailerVideo && getMovieVideo();
+    // getMovieVideo()
   }, []);
 };
 

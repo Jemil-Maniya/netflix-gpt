@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 const usePopularMovies = () => {
   const dispatch = useDispatch();
-  const popularMovies = useSelector((store) => store.movies.popularMovies);
+  // const popularMovies = useSelector((store) => store.movies.popularMovies);
 
   const getPopularMovies = async () => {
     const data = await fetch(
@@ -18,7 +18,8 @@ const usePopularMovies = () => {
   };
 
   useEffect(() => {
-    !popularMovies && getPopularMovies();
+    // !popularMovies &&
+     getPopularMovies();
   }, []);
 };
 
